@@ -145,7 +145,7 @@
   <bean id="digestEntryPoint" class="org.springframework.security.web.authentication.www.DigestAuthenticationEntryPoint">
     <property name="realmName" value="Opencast Matterhorn" />
     <property name="key" value="matterhorn" />
-    <property name="nonceValiditySeconds" value="10" />
+    <property name="nonceValiditySeconds" value="300" />
   </bean>
 
   <bean id="authSuccessHandler" class="org.opencastproject.kernel.security.AuthenticationSuccessHandler">
